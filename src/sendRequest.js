@@ -18,8 +18,8 @@ const sendRequest = async () => {
         console.log(url);
 
         let response_all = await getResults(url);
-        console.log({ola:response_all.items,url});
-        buildResults(...response_all.items);
+        response_all = randomArr(limite,...response_all.items);
+        buildResults(...response_all);
     }
 }
 export { sendRequest }

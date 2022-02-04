@@ -4,11 +4,11 @@ const buildUrl = function (search,page_size) {
 }
 
 const randomArr = (new_size, ...arr) => {
-    if (arr.length > new_size) {
+    //if (arr.length > new_size) {
 
         let idx_arr = [];
         let limite = arr.length;
-        for (let i = 0; i < new_size; i++) {
+        for (let i = 0; i < limite; i++) {
             let index;
             do {
                 index = Math.floor(Math.random() * limite);
@@ -16,9 +16,9 @@ const randomArr = (new_size, ...arr) => {
             idx_arr.push(index)
         }
         return idx_arr.map(e => arr[e]);
-    }
+    /*}
     else
-        return arr;
+        return arr;*/
 }
 const validLimit = function(limite){
     const result = isNaN(limite);
