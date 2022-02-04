@@ -1,15 +1,14 @@
 {
   "name": "repo-finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Reto de la sesión 7 de la clase Javascript II de BEDU",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Carlos Alberto Morales Ortega",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.17.0",
